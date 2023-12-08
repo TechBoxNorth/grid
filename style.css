@@ -297,3 +297,33 @@ body {
   grid-column: col 1 / span 4;
   grid-row: row 3;
 }
+
+.boxNine {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 60px 120px 120px;
+  grid-template-rows: 60px 120px;
+  grid-template-areas:
+    "sidebar header header"
+    "sidebar content content";
+}
+
+.box9 {
+  background-color: goldenrod;
+  color: white;
+  border-radius: 6px;
+  padding: 20px;
+  font-size: 100%;
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+}
